@@ -1,0 +1,22 @@
+Source: ext-mariadb
+Section: admin
+Priority: optional
+Maintainer: z17 Dev <mail@z17.dev>
+Uploaders: z17 Dev <mail@z17.dev>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.1
+Homepage: https://pkgstore.gitlab.io
+Vcs-Browser: https://github.com/pkgstore/linux-deb-ext-mariadb
+Vcs-Git: https://github.com/pkgstore/linux-deb-ext-mariadb.git
+Rules-Requires-Root: no
+
+# -------------------------------------------------------------------------------------------------------------------- #
+# Package: ext-mariadb
+# -------------------------------------------------------------------------------------------------------------------- #
+
+Package: ext-mariadb
+Architecture: all
+Depends: mariadb-server
+        ,${misc:Depends}
+Description: META-package for install and configure MariaDB
+ META-package for install and configure MariaDB.
